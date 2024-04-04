@@ -1,0 +1,90 @@
+#gaian
+
+azure.config.enable=true
+azure.config.tenantId = cfdc910d-35d0-4b41-a5bc-6e707baa7dbb
+azure.config.clientId = 4e234190-9c1a-4b08-a90c-b75f2004f7dd
+azure.config.clientSecret = hNB8Q~sXvF~KHN8RlBEbuoz3_IQ03W4dxSAB0bG3
+
+
+
+#  avinash
+#azure.config.enable=true
+#azure.config.tenantId = 1c411604-175d-4132-afec-4a2d7dc6d710
+#azure.config.clientId = 2126bc42-0c9a-476e-b050-44a9bfd82e08
+#azure.config.clientSecret = tLd8Q~itws2HQxwgc6KYqn0EO73Qct4es-21zdcU
+#azure.config.subscriptionId = 13ed73cf-3ad5-4e36-82ce-854682cd37f0
+
+
+#rohit
+#azure.config.enable=true
+#azure.config.tenantId = 3ccbfafb-96a9-4747-a4ea-7b37fec63656
+#azure.config.clientId = 5c723378-7d6d-4f31-921b-9158c1916a59
+#azure.config.clientSecret = vnA8Q~QoayVp2672H-XUuavxdsQVO6BxYL7fZaxv
+#azure.config.subscriptionId = 13ed73cf-3ad5-4e36-82ce-854682cd37f0
+
+
+
+
+spring.application.name=moibus-iam
+
+current.active.iam=AZURE
+#==============================MONGO=================================================
+spring.data.mongodb.uri=mongodb://localhost:27017/mobius-iam
+
+
+otp.expiry.time=300
+token.expiry.time=300
+otp.start.range=100000
+otp.end.range=900000
+
+
+spring.redis.enable=true
+spring.redis.nodes=192.168.28.3:6379,192.168.28.6:6379,192.168.28.7:6379
+spring.redis.password=GaianAdmin80RS
+spring.redis.port=6379
+spring.redis.maxConnections=100
+spring.redis.maxIdle=10
+spring.redis.minIdle=5
+spring.redis.testOnBorrow=true
+spring.redis.testOnReturn=true
+spring.redis.testWhileIdle=true
+spring.redis.minEvictableIdleTime=300
+spring.redis.timeBetweenEvictionRuns=30
+spring.redis.numTestsPerEvictionRun=5
+spring.redis.maxWait=5
+spring.redis.blockWhenExhausted=true
+spring.redis.durationInDays=30
+
+
+##########################################Send OTP Via Email Details#############################################
+iam.email.host=smtp.gmail.com
+iam.email.port=587
+iam.email.emailId=iam@gaiansolutions.com
+iam.email.password=GaianIAM@2021
+iam.email.provider=GMAIL
+iam.email.subject=Gaian Solutions
+iam.email.templateSubject=Welcome Gaianers!
+iam.email.templateName=OMNI_OTP_TEMPLATE1
+iam.email.templateFormat=Hi, Your OTP is :
+
+
+
+azure.tenant.checkNameAvailabilityURL = https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.AzureActiveDirectory/checkNameAvailability?api-version=2021-04-01
+azure.tenant.URL = https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureActiveDirectory/b2cDirectories/{resourceName}?api-version=2021-04-01
+
+
+#gaian
+azure.holacracy.applicationId = 4e234190-9c1a-4b08-a90c-b75f2004f7dd
+azure.monet.applicationId = c2cd391a-8655-4457-9b05-1a89c0630955
+azure.pascalIntelligence.applicationId = a13448cc-eb33-4e6d-ad53-4e1d32f8b03d
+azure.vinci.applicationId = 60c948f1-ca23-455f-ae21-3eb31f168103
+azure.boltzmannBob.applicationId = d1bc9314-79dd-4529-99f5-820981e12cde
+
+
+
+#rohit
+#azure.holacracy.applicationId = 5c723378-7d6d-4f31-921b-9158c1916a59
+#azure.monet.applicationId = e786a7e9-f0e8-4a7d-aeeb-4652119dfae5
+#azure.pascalIntelligence.applicationId = 1a1f03c6-b88b-4337-a628-e902f7fc20d8
+#azure.vinci.applicationId = 3c6358bf-069f-4f2d-98b9-7a1aa0c2fcd1
+#azure.boltzmannBob.applicationId = a236f9cc-cd97-4441-b751-810b11ecd021
