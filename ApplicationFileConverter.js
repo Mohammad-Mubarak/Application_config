@@ -19,7 +19,7 @@ app.post("/upload", upload.single("file"), (req, res) => {
 	const result = dotenv.parse(fs.readFileSync(req.file.path));
 	const formattedProperties = {};
 	for (const key in result) {
-		formattedProperties[key] = "${prod." + key + "}";
+		formattedProperties[key] = "${" + key + "}";
 	}
 	const formattedPropertiesString = Object.entries(formattedProperties)
 		.map(([key, value]) => `${key}=${value}`)
